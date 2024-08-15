@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import "../styles/Contact.css";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState({});
 
   const validateEmail = (email) => {
@@ -15,11 +16,16 @@ const Contact = () => {
 
     if (!value) {
       setErrors({ ...errors, [name]: `${name} is required` });
-    } else if (name === 'email' && !validateEmail(value)) {
-      setErrors({ ...errors, email: 'Invalid email address' });
+    } else if (name === "email" && !validateEmail(value)) {
+      setErrors({ ...errors, email: "Invalid email address" });
     } else {
-      setErrors({ ...errors, [name]: '' });
+      setErrors({ ...errors, [name]: "" });
     }
+  };
+
+  const adjustTextareaHeight = (e) => {
+    e.target.style.height = "auto";
+    e.target.style.height = `${e.target.scrollHeight}px`;
   };
 
   return (
@@ -48,6 +54,8 @@ const Contact = () => {
           placeholder="Message"
           value={formData.message}
           onChange={handleChange}
+          onInput={adjustTextareaHeight}
+          rows="4"
         />
         {errors.message && <p>{errors.message}</p>}
 

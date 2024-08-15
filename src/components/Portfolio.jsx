@@ -1,9 +1,43 @@
-import React from 'react';
+import React from "react";
 
 const Portfolio = () => {
   const projects = [
-    { title: 'Project 1', image: '/assets/images/project1.jpg', link: '#', repo: '#' },
-    // Add five more projects
+    {
+      title: "Project 1",
+      image: "/assets/images/project1.jpg",
+      link: "#",
+      repo: "#",
+    },
+    {
+      title: "Project 2",
+      image: "/assets/images/project1.jpg",
+      link: "#",
+      repo: "#",
+    },
+    {
+      title: "Project 3",
+      image: "/assets/images/project1.jpg",
+      link: "#",
+      repo: "#",
+    },
+    {
+      title: "Project 4",
+      image: "/assets/images/project1.jpg",
+      link: "#",
+      repo: "#",
+    },
+    {
+      title: "Project 5",
+      image: "/assets/images/project1.jpg",
+      link: "#",
+      repo: "#",
+    },
+    {
+      title: "Project 6",
+      image: "/assets/images/project1.jpg",
+      link: "#",
+      repo: "#",
+    },
   ];
 
   return (

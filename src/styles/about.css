@@ -12,7 +12,8 @@ body {
 
 /* About Me section styling */
 .about {
-    margin: 50px 20px;
+    max-width: 80%;
+    margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -28,7 +29,7 @@ h2 {
 }
 
 /* Paragraph styling */
-p {
+.about p {
     font-size: 1.1em;
     margin-bottom: 20px;
     color: #555;
@@ -37,7 +38,7 @@ p {
 
 /* Image styling */
 img {
-    max-width: 100%;
+    max-width: 10%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;

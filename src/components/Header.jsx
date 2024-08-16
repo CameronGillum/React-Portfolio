@@ -5,7 +5,7 @@ import "../styles/Header.css";
 const Header = () => {
   return (
     <header>
-      <h1>Developer Name</h1>
+      <h1>Cameron Gillum</h1>
       <nav>
         <ul>
           <li>

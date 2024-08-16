@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <section className="about">
       <img
-        src="../public/assets/images/Cameron-Gillum.png"
+        src="../assets/images/Cameron-Gillum.png"
         alt="A picture of the developer of this page."
       />
       <p>
